@@ -59,10 +59,10 @@ export default function Search() {
   return (
     <>
     <div className='bg-[#F1F5F8] pt-[100px] pb-[200px] h-screen'>
-        <div className='bg-white mx-auto md:max-w-[700px] md:p-[100px]'>
+        <div className='bg-white mx-auto md:max-w-[700px] p-10 md:p-[100px]'>
 
-         <h1 className='text-center text-black md:text-5xl font-bold pb-[60px]'>Grocery List</h1>   
-        <input className='bg-[#F1F5F8] rounded-[4px] text-xl md:w-[500px] py-[6px] px-[15px] mb-[40px] outline-0' type="text" onChange={handleInput} placeholder='Search...........'/>
+         <h1 className='text-center text-black text-3xl p-10 md:text-5xl font-bold pb-[60px]'>Grocery List</h1>   
+        <input className='bg-[#F1F5F8] mx-auto block  rounded-[4px] text-xl md:w-[500px] py-[4px] md:py-[6px] px-[15px] mb-[40px] outline-0' type="text" onChange={handleInput} placeholder='Search...........'/>
         {
         store && store.map((item3,index)=>(
             <div key={index}>
